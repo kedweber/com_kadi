@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="1.6">
+    <name>Kadi</name>
+    <author>Moyo Web Architects</author>
+    <creationDate>April 2015</creationDate>
+    <packagename>kadi</packagename>
+    <version>0.1</version>
+    <url>http://www.moyoweb.nl/</url>
+    <packager>Ked</packager>
+    <packagerurl>http://www.moyoweb.nl/</packagerurl>
+    <description>Kadi Package</description>
+    <files folder="packages">
+        <file type="component" id="kadi">component</file>
+    </files>
+</extension>

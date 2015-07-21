@@ -1,0 +1,17 @@
+{
+    "name": "kedweber/com_kadi",
+    "type": "joomlatools-installer",
+    "description": "Cards Component",
+    "keywords": ["joomla", "nooku", "aside", "quote", "swatch", "card"],
+    "homepage": "https://github.com/kedweber/com_kadi",
+    "authors": [
+        {
+            "name": "Ked Weber",
+            "email": "white001goat@gmail.com",
+            "homepage": "http://www.moyoweb.nl"
+        }
+    ],
+    "require": {
+        "joomlatools/installer": "*"
+    }
+}

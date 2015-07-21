@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0.0" method="upgrade" overwrite="true">
+    <name>Kadi</name>
+    <identifier>com:kadi</identifier>
+    <author>Moyo Web Architects</author>
+    <creationDate>March 2014</creationDate>
+    <copyright>(C) 2015 Keddrin. All rights reserved.</copyright>
+    <license>GNU General Public License version 3 or later.</license>
+    <authorEmail>keddrin@moyoweb.nl</authorEmail>
+    <authorUrl>www.moyoweb.nl</authorUrl>
+    <version>1.0.0</version>
+    <description>Kadi ("cards") for rendering brief asides</description>
+
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">install/install.sql</file>
+        </sql>
+    </install>
+
+    <administration>
+        <files folder="administrator/components/com_kadi">
+            <folder>controllers</folder>
+            <folder>databases</folder>
+            <folder>install</folder>
+            <folder>models</folder>
+        </files>
+
+        <menu>COM_KADI</menu>
+        <submenu>
+            <menu view="cards">KADI</menu>
+		<submenu>
+		    <menu view="cards2">cards2</menu>
+		    <menu view="com=cck&cards2">com=cck&cards3</menu>
+		    <menu view="test/cards2">test/cards4</menu>
+		</submenu>
+            <menu view="items">ITEMS</menu>
+        </submenu>
+    </administration>
+
+    <files folder="components/com_kadi">
+        <folder>language</folder>
+        <folder>templates</folder>
+        <folder>views</folder>
+
+        <file>dispatcher.php</file>
+        <file>kadi.php</file>
+    </files>
+
+    <media folder="media">
+        <folder>com_kadi/less</folder>
+    </media>
+</extension>
